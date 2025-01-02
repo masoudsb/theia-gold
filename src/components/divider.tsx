@@ -1,6 +1,6 @@
 import "@/style/divider.css"
 
-export default function () {
+export default function Divider() {
     
         return (
           <div className="div py-16">

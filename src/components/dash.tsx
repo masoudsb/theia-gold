@@ -10,7 +10,6 @@ import {
   MenuItems,
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { useState } from "react";
 
 const user = {
   name: "Tom Cook",
@@ -44,7 +43,7 @@ function classNames(...classes: string[]) {
 export default function Dash({navigation,setNavigation}:NavDashProps) {
   // const [navigation, setNavigation] = useState(initNavigation)
   
-  const handleClick = (name :any) => {
+  const handleClick = (name :string) => {
     setNavigation((prev) => prev.map((item) => ({
      ...item,current:item.name === name 
     })))

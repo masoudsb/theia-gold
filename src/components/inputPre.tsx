@@ -3,7 +3,7 @@ import "@/style/inputPre.css"
 export default function InputPre({ children, type, onChange, classN ,value}: {
     children: string;
     type: string;
-    onChange: any | undefined;
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
     classN: string;
     value: string  | undefined;
     

@@ -16,7 +16,7 @@ export default function Email() {
   const [show, setShow] = useState(false);
   
   
-  const onButtonClick = (e: any) => {
+  const onButtonClick = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     setEmailEro("");
@@ -40,7 +40,7 @@ export default function Email() {
     setShow(true);
   };
   const router=useRouter()
-    const handleVry = (e: any) => {
+    const handleVry = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setVryCodeEro("")
     if (vryCode.length !== 6) {
@@ -114,14 +114,14 @@ export default function Email() {
             className={`flex flex-col space-y-4  justify-self-center`}
           >
             <div className="flex flex-col space-y-4 ">
-               <InputPre  type="email" onChange={(ev:any) => setEmail(ev.target.value)} classN="btn-num" value={email}>Enter Your Email</InputPre>
+               <InputPre  type="email" onChange={(ev:React.ChangeEvent<HTMLInputElement>) => setEmail(ev.target.value)} classN="btn-num" value={email}>Enter Your Email</InputPre>
          
               <label className="lab">{emailEro}</label>
-                <InputPre  type="number" onChange={(ev:any) => setPhone(ev.target.value)} classN="remove-arrow btn-num" value={phone}>Enter Your Phone Number</InputPre>
+                <InputPre  type="number" onChange={(ev:React.ChangeEvent<HTMLInputElement>) => setPhone(ev.target.value)} classN="remove-arrow btn-num" value={phone}>Enter Your Phone Number</InputPre>
               
               <label className="lab">{phoneEro}</label>
             </div>
-           <div className="pb-6"> <ButtonReg type="submit" classN="">Next</ButtonReg>
+           <div className="pb-6"> <ButtonReg type="submit" classN="" onClick={undefined}>Next</ButtonReg>
                                   </div>
           </form>
         </div>
@@ -131,11 +131,11 @@ export default function Email() {
             className={`flex flex-col space-y-4  justify-self-center`}
           >
             <div className="flex flex-col space-y-4 ">
-            <InputPre  type="number" onChange={(ev:any) => setVryCode(ev.target.value)} classN="remove-arrow btn-num" value={vryCode}>Enter Your Vrify Code</InputPre>
+            <InputPre  type="number" onChange={(ev:React.ChangeEvent<HTMLInputElement>) => setVryCode(ev.target.value)} classN="remove-arrow btn-num" value={vryCode}>Enter Your Vrify Code</InputPre>
           
               <label className="lab">{vryCodeEro}</label>
             </div>
-            <div className="pb-6"> <ButtonReg type="submit" classN="">Verify</ButtonReg>
+            <div className="pb-6"> <ButtonReg type="submit" classN="" onClick={undefined}>Verify</ButtonReg>
                                   </div>
             {/* <button type="submit" className="pb-8 text-blue-600/100 pt-8">
               Verify

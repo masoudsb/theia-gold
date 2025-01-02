@@ -50,7 +50,7 @@ export default function Hero() {
               massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
               fringilla.
             </p>
-            <ButtonPre href="#about" classn="self-end ">Let's Explore</ButtonPre>
+            <ButtonPre href="#about" classn="self-end " type="button">Let&apos;s Explore</ButtonPre>
           </div>
         </div>
       </div>

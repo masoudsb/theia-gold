@@ -12,7 +12,7 @@ export default function Login() {
   const [numEro, setNumEro] = useState("");
   const [passEro, setPassEro] = useState("");
 
-  const onButtonClick = (e: any) => {
+  const onButtonClick = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setNumEro("");
     setPassEro("");
@@ -46,7 +46,9 @@ export default function Login() {
         >
           <InputPre
             type="number"
-            onChange={(ev: any) => setNum(ev.target.value)}
+            onChange={(ev: React.ChangeEvent<HTMLInputElement>) =>
+              setNum(ev.target.value)
+            }
             classN="remove-arrow"
             value={num}
           >
@@ -55,7 +57,9 @@ export default function Login() {
           <label className="lab">{numEro}</label>
           <InputPre
             type="password"
-            onChange={(ev: any) => setPass(ev.target.value)}
+            onChange={(ev: React.ChangeEvent<HTMLInputElement>) =>
+              setPass(ev.target.value)
+            }
             classN=""
             value={pass}
           >
@@ -64,19 +68,16 @@ export default function Login() {
 
           <label className="lab">{passEro}</label>
 
-          <ButtonReg type="submit" classN="">
+          <ButtonReg type="submit" classN="" onClick={undefined}>
             Login
           </ButtonReg>
         </form>
         <div className="foot-log p-9">
-          <p>
-
-          If You Don't Register Go To
-          </p>
+          <p>If You Don&apos;t Register Go To</p>
           <div className="but-d">
-          <ButtonPre href="./register" classn="but">
-            Sign In
-          </ButtonPre>
+            <ButtonPre href="./register" classn="but" type="button">
+              Sign In
+            </ButtonPre>
           </div>
         </div>
       </div>

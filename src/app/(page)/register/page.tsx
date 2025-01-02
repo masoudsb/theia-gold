@@ -5,7 +5,8 @@ import "../../../style/loginStyle.css";
 import { useState } from "react";
 import InputPre from "@/components/inputPre";
 import ButtonReg from "@/components/buttonReg";
-import DateInput from "@/components/dateInput";
+
+
 export default function Register() {
   const [name, setname] = useState("");
   const [lastName, setlastName] = useState("");
@@ -79,20 +80,20 @@ export default function Register() {
           className="flex flex-col space-y-4  justify-self-center"
         >
                   <div className="flex flex-col space-y-4 justify-self-center">
-                      <InputPre  type="text" onChange={(ev:any) => setname(ev.target.value)} classN="" value={name}>Enter Your First Name</InputPre>
+                      <InputPre  type="text" onChange={(ev:React.ChangeEvent<HTMLInputElement>) => setname(ev.target.value)} classN="" value={name}>Enter Your First Name</InputPre>
            
             <label className="lab">{nameEro}</label>
-                      <InputPre  type="text" onChange={(ev:any) => setlastName(ev.target.value)} classN="" value={lastName}>Enter Your Last Name</InputPre>
+                      <InputPre  type="text" onChange={(ev:React.ChangeEvent<HTMLInputElement>) => setlastName(ev.target.value)} classN="" value={lastName}>Enter Your Last Name</InputPre>
      
             <label className="lab">{lastNameEro}</label>
          
-                      <InputPre  type="number" onChange={(ev:any) => setNatCode(ev.target.value)} classN="remove-arrow" value={natCode}>Enter Your National Code</InputPre>
+                      <InputPre  type="number" onChange={(ev:React.ChangeEvent<HTMLInputElement>) => setNatCode(ev.target.value)} classN="remove-arrow" value={natCode}>Enter Your National Code</InputPre>
           <label className="lab">{natCodeEro}</label>
         
-                <InputPre  type="date" onChange={(ev:any) => setBirDay(ev.target.value)} classN="" value={birDay}> </InputPre>
+                <InputPre  type="date" onChange={(ev:React.ChangeEvent<HTMLInputElement>) => setBirDay(ev.target.value)} classN="" value={birDay}> </InputPre>
           <label className="lab">{birDayEro}</label>
                   </div>
-                       <div className="pb-6"> <ButtonReg type="submit" classN="">Next</ButtonReg>
+                       <div className="pb-6"> <ButtonReg type="submit" classN="" onClick={undefined}>Next</ButtonReg>
                        </div>
         </form>
       </div>

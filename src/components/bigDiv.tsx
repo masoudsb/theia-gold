@@ -1,5 +1,5 @@
 import "@/style/bigDiv.css"
-import { title } from "process"
+
 
 export default function BigDiv() {
     const bigDivider = [
