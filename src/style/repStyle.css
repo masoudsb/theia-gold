@@ -1,0 +1,22 @@
+
+textarea:focus{
+    outline-color: #F76808 !important;
+}
+
+
+@media (max-width: 850px) {
+.rep-h{
+font-size: 36px;
+}
+.rep-area{
+    width: 60%;
+}
+}
+@media (max-width: 560px) {
+.rep-h{
+font-size: 28px;
+}
+.rep-area{
+    width: 80%;
+}
+}

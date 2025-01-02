@@ -1,0 +1,48 @@
+.box-up{
+          
+    width: 60%;
+    margin: -30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: #232323;
+    box-shadow: 4px 6px 8px 4px #000000B2;
+    color: #EDEDED;
+
+    transform: scale(.7);
+}
+.btn-fin{
+    width: 234px !important;
+}
+
+.lab-up{
+    border: 1px solid transparent;
+}
+.lab-up:hover{
+    color: #EDEDED;
+    background: transparent;
+    border: 1px solid #F76808;
+    outline: none;
+}
+.lab-fir:hover{
+    
+    color: #F76808;
+}
+@media(max-width:1024px){
+    .box-up{
+    width: 80%;
+    }
+}
+@media(max-width:844px){
+    .box-up{
+        width: 100%;
+    }
+}
+@media(max-width:675px){
+    .lab-fir{
+        height: 80px;
+    }
+    .box-up{
+            
+        transform: scale(.85);
+    }
+}

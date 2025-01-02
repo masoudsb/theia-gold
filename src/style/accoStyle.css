@@ -1,0 +1,9 @@
+.acco-li{
+    border-bottom: 1px solid hsla(24, 94%, 50%, 0.606) !important;
+
+}
+.acco-det{
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}

@@ -1,0 +1,88 @@
+/* .header{
+    background: #1C1C1CCC;
+    backdrop-filter: blur(20px);
+    width: Fixed (1,920px)px;
+    height: 80px;
+    padding: 16px 40px 16px 40px;
+    gap: 0px;
+    justify-content: space-between;
+    opacity: 0.98;
+   
+}
+
+.logo{
+font-family: jomhuria;
+    
+    font-size: 32px;
+    color: #F76808;
+
+    
+}
+nav{
+    width: 25%;
+    color: #FFFFFF;
+font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.36px;
+letter-spacing: 2px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+justify-content: space-between;
+align-items: center;
+white-space: nowrap;
+
+}
+
+.sign{
+font-family: Inter;
+font-size: 20px;
+font-weight: 600;
+line-height: 24.2px;
+letter-spacing: 0.02em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #FFFFFF;
+align-items: center;
+
+
+}
+
+nav >*:hover,
+.sign:hover{
+    color: #F76808;
+}
+
+.dash{
+    padding: 5px 0;
+
+    
+}
+ */
+
+.logo {
+  font-family: jomhuria;
+}
+nav {
+  font-family: Inter;
+}
+.sign {
+  font-family: Inter;
+}
+
+nav > *:hover,
+.sign:hover,
+li:hover {
+  color: #f76808;
+}
+
+li {
+  font-family: Inter;
+  border-bottom: 1px solid #ffffff4d;
+  padding-bottom: 10px;
+}
+li:last-child {
+  border-bottom: none;
+}

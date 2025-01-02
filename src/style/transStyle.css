@@ -1,0 +1,10 @@
+.border-trans{
+    border-color:#F76808 !important;
+}
+
+@media (max-width: 660px) {
+    .trans-list{
+       width: 80%;
+    }
+    
+ }

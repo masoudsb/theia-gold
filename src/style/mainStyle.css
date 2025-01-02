@@ -1,0 +1,126 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    background: #282828;
+    min-height: 100vh;
+    height: 100%;
+    text-align: center;
+    padding-top: 40px;
+    width: 100%;
+}
+.all{
+    position: relative;
+    background: #282828;
+    overflow: hidden;
+   
+}
+.group1{
+    position: absolute;
+    height: 666.666px;
+    top: 40px;
+    right: 0;
+    gap: 0px;
+    
+    
+}
+.hero{
+    position: relative;
+    top: 80px;
+    left: 0;
+}
+/* .blur{
+    width: 1000px;
+height: 1000px;
+top: 50px;
+right: -300px;
+gap: 0px;
+opacity: 0.2;
+background: radial-gradient(circle, rgba(255, 139, 62, 0.4) 0%, rgba(255, 139, 62, 0) 100%);
+backdrop-filter: blur(10px);
+position: absolute;
+display: flex;
+z-index: 10000;
+border-radius: 50%;
+} */
+
+footer{
+    
+    background: #161616;
+    height: 100%;
+}
+.last-last-div{
+    background: #161616;
+    height: 100%;
+    
+    }
+
+
+.blur1{
+    position: absolute; 
+    top: -500px;
+    right: -800px;
+z-index: 1 ;
+opacity: 200%;
+
+}
+.blur2{
+    
+    position: absolute; 
+    top: 500px;
+    left:-700px;
+    z-index: 1 ;
+    opacity: 200%;
+}
+.blur3{
+    
+    position: absolute; 
+    top: 2000px;
+    left:200px;
+opacity: 200%;
+}
+
+
+@media (max-width: 1163px) {
+    .group1{
+        position: absolute;
+        height: 555.555px;
+        top: 40px;
+        right: 0;
+        gap: 0px;
+        
+    }
+    
+ }
+@media (max-width: 993px) {
+    .group1{
+        position: absolute;
+        height: 500px;
+        top: 40px;
+        right: 0;
+        gap: 0px;
+        
+    }
+    
+ }
+@media (max-width: 768px) {
+    .group1{
+        position: absolute;
+        height: 440px;
+        top: 40px;
+        right: 0;
+        gap: 0px;
+        
+    }
+    
+ }
+ .main-log{
+    background: #282828;
+    height: 100%;
+    text-align: center;
+    padding-top: 40px;
+    width: 100%;
+}

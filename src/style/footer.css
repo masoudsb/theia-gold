@@ -1,0 +1,113 @@
+/* .foot{
+    color: #FFFFFF;
+
+}
+.icon-foot img{
+    
+        display: block;
+        min-width: 20%;
+        min-height: 20%;
+        object-fit: contain;
+        padding: 16px;
+        margin-right: 20px;
+        cursor: pointer;
+        color: #EDEDED;
+
+}
+
+.list-foot p{
+    white-space: nowrap;
+}
+
+@media(max-width:1440px){
+    .foot{
+        }
+
+} */
+
+.foot {
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 40px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 50px ; 
+}
+
+.icon-foot img {
+    display: block;
+    width: 40px; 
+    height: 40px; 
+    object-fit: contain;
+    padding: 8px;
+    margin-right: 16px;
+    cursor: pointer;
+    color: #EDEDED;
+}
+
+.list-foot p {
+    white-space: nowrap;
+}
+
+
+@media (max-width: 1440px) {
+    .foot {
+        gap: 24px; 
+    }
+
+ 
+}
+
+
+@media (max-width: 1024px) {
+    .foot {
+        grid-template-columns: repeat(3, 1fr); /* تبدیل به 3 ستون */
+        gap: 16px;
+    }
+
+    .icon-foot img {
+      
+        margin-right: 88px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .foot {
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        gap: 16px;
+    }
+    
+    .tittle-foot {
+        text-align: center;
+        grid-column: 1/-1;
+
+    }
+
+    .icon-foot {
+        justify-content: center; 
+    }
+    .icon-foot img{
+        margin: 0 44px;
+ 
+    }
+
+    .list-foot {
+        text-align: center;
+    }
+    
+}
+
+
+@media (max-width: 480px) {
+    .foot {
+        padding: 16px; 
+    }
+
+    .icon-foot {
+        align-items: center;
+    }
+}

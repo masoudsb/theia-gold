@@ -1,0 +1,73 @@
+.bg-last-div{
+    background: #161616;
+
+}
+
+
+.last-div h2{
+    font-family: Inter;
+    font-size: 48px;
+font-weight: 400;
+line-height: 58.09px;
+letter-spacing: 0.02em;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #FFFFFF;
+
+}
+.last-div p{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+letter-spacing: 0.02em;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #FFFFFF;
+
+
+}
+
+.last-div>div>form {
+    border: 1px solid #3E3E3E;
+padding: 0px 16px 0px 16px;
+gap: 0px;
+border-radius: 8px;
+justify-content:space-between ;
+
+}
+
+
+
+.last-div>div>form>input {
+    background: transparent;
+    outline: none;
+font-family: Inter;
+font-size: 20px;
+font-weight: 600;
+line-height: 24.2px;
+letter-spacing: 0.02em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #707070;
+padding: 16px 0;
+
+}
+
+.btnf{
+    padding: 6px 8px;
+}
+@media(max-width:650px){
+    .last-div{
+        width: 90%;
+    }
+}
+@media(max-width:565px){
+    .last-div h2{
+        font-size: 32px;
+    }
+    .last-div p{
+        font-size: 16px;
+    }
+}

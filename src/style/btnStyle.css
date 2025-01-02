@@ -1,0 +1,28 @@
+.btn{
+    width: Hug (161px)px;
+height: Hug (48px)px;
+padding: 12px 16px 12px 16px;
+gap: 10px;
+border-radius: 4px;
+opacity: 0px;
+background: #F76808;
+white-space: nowrap;
+
+font-family: Inter;
+font-size: 20px;
+font-weight: 600;
+line-height: 24.2px;
+letter-spacing: 0.02em;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+@media (max-width: 768px) {
+    .btn{
+       transform: scale(80%);
+       align-items: end;
+    }
+    
+ }

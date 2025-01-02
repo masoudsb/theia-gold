@@ -1,101 +1,69 @@
-import Image from "next/image";
+"use client"
+import Hero from "@/components/hero"
+import "../style/mainStyle.css";
 
-export default function Home() {
+import React from "react";
+import Divider from "@/components/divider";
+import MidTable from "@/components/midTable";
+import BigDiv from "@/components/bigDiv";
+import LastHero from "@/components/lastHero";
+import LastDiv from "@/components/lastDiv";
+
+export default function Landing() {
+
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div id="head"  className="all ">
+      <div className="land">
+      
+        <img className="blur1 z-50" src="/blur.png" alt="blur"/>
+        <img className="blur2 z-0" src="/blur.png" alt="blur"/>
+        <img className="blur3 -z-10" src="/blur.png" alt="blur"/>
+          {/* <svg
+              viewBox="0 0 1024 1024"
+              aria-hidden="true"
+              className="absolute right-0 top-1/2 size-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0 z-50 "
+            >
+              <circle r={512} cx={512} cy={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
+              <defs>
+                <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                  <stop stopColor="#7775D6" />
+                  <stop offset={1} stopColor="#E935C1" />
+                  </radialGradient>
+                  </defs>
+                  </svg> */}
+        
+                  
+        <img className="group1 z-0" src="/design1.png" alt="pic" />
+      </div>
+      <div className="hero">
+        <Hero />
+      </div>
+      <div className="divider z-10 relative">
+        <img src="/vector11.png" alt="vec" className="mt-32 relative z-40 w-full" />
+        <div>
+        <Divider/>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <img src="/vector12.png" alt="vec" className=" relative z-40 w-full" />
+      </div>
+      <div className="mid-table z-10 relative">
+        <MidTable />
+      </div>
+      <div id="about" className="big-divider">
+      <img  src="/vector8.png" alt="vector8" className="w-full"/>
+      <div><BigDiv/></div>
+      <img src="vector9.png" alt="vector9" className="w-full"/>  
+      </div>
+      <div className="last-hero">
+        <LastHero/>
+      </div>
+      <div  className="last-divider">
+      <img  src="/vector8.png" alt="vector8" className="w-full"/>
+      <div><LastDiv/></div>
+      <img  src="vector9.png" alt="vector9" className="w-full last-last-div"/>  
+      </div>
     </div>
+    
+    
   );
 }
