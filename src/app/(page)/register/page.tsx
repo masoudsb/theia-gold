@@ -18,7 +18,7 @@ export default function Register() {
   const [birDayEro, setBirDayEro] = useState("");
 
   const router = useRouter();
-  const onButtonClick = (e: any) => {
+  const onButtonClick = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setnameEro("");
     setlastNameEro("");
