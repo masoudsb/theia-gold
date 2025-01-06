@@ -12,7 +12,7 @@ export default function Nav() {
       <h1 className="text-3xl font-bold text-[#F76808] logo">
         <Link href={"/"}  className="cursor-pointer logo">Theia Gold</Link>
       </h1>
-      <nav className=" sm:flex justify-between items-center space-x-6 text-white text-sm sm:text-base font-medium">
+      <nav className="sm:flex justify-between items-center space-x-6 text-white text-sm sm:text-base font-medium">
         <Link href="/dash">Dashboard</Link>
         
       </nav>

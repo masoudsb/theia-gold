@@ -10,10 +10,13 @@ import {
   MenuItems,
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import "@/style/dash.css"
+import Image from "next/image";
+
 
 const user = {
-  name: "Tom Cook",
-  email: "tom@example.com",
+  name: "Milad Parvizi",
+  email: "milad@example.com",
   imageUrl: "/user.jpg",
 };
 
@@ -56,11 +59,11 @@ export default function Dash({navigation,setNavigation}:NavDashProps) {
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="flex h-20 items-center justify-between">
                 <div className="flex items-center">
-                  <div className="shrink-0">
-                    <img
+                  <div className="shrink-0 h-12 w-12">
+                    <Image fill
                       alt="Your Company"
                       src="/logo-dash.png"
-                      className="h-12 w-auto ml-8"
+                      className=" ml-8 dash-img"
                     />
                   </div>
                   <div className="hidden md:block">
@@ -98,11 +101,14 @@ export default function Dash({navigation,setNavigation}:NavDashProps) {
                       <div>
                         <MenuButton className="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                           <span className="sr-only">Open user menu</span>
-                          <img
-                            className="h-12 w-12 rounded-full"
+                          <div className="h-12 w-12">
+
+                          <Image fill
+                            className=" rounded-full dash-img"
                             src={user.imageUrl}
                             alt=""
-                          />
+                            />
+                            </div>
                         </MenuButton>
                       </div>
                       <MenuItems className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
@@ -160,9 +166,9 @@ export default function Dash({navigation,setNavigation}:NavDashProps) {
               </div>
               <div className="border-t border-gray-700 pb-3 pt-4">
                 <div className="flex items-center px-5">
-                  <div className="shrink-0">
-                    <img
-                      className="h-10 w-10 rounded-full"
+                  <div className="shrink-0 h-20 w-20 ">
+                    <Image fill
+                      className="rounded-full dash-img"
                       src={user.imageUrl}
                       alt=""
                     />

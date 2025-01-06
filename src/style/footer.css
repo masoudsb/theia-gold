@@ -46,6 +46,9 @@
     cursor: pointer;
     color: #EDEDED;
 }
+.icon-logo{
+    position: relative !important;
+}
 
 .list-foot p {
     white-space: nowrap;

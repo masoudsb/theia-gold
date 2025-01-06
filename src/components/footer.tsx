@@ -1,4 +1,5 @@
 import "@/style/footer.css"
+import Image from "next/image"
 
 export default function Footer() {
     return (
@@ -9,9 +10,9 @@ export default function Footer() {
                     <p className="text-xl pb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. </p>
                 </div>
                 <div className="icon-foot row-span-1 h-14 flex ">
-                    <img src="/insta.png" alt="insta" />
-                    <img src="/xlogo.png" alt="xlogo" />
-                    <img src="/face.png" alt="face" />
+                    <Image fill className="icon-logo" src="/insta.png" alt="insta" />
+                    <Image fill className="icon-logo" src="/xlogo.png" alt="xlogo" />
+                    <Image fill className="icon-logo" src="/face.png" alt="face" />
                 </div>
             </div>
             <div className="list-foot col-span-1">
