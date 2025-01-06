@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 
 const callouts = [
   {
@@ -34,9 +34,12 @@ export default function dashPage() {
           <div className="mt-28 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
             {callouts.map((callout) => (
               <div key={callout.name} className="group relative">
-                <img
+                <Image
+                  key={callout.name}
                   alt={callout.imageAlt}
                   src={callout.imageSrc}
+                  width={160} 
+                  height={160}
                   className="w-3/5 rounded-lg object-cover group-hover:opacity-75  bg-transparent justify-self-center"
                 />
                 <h3 className="mt-6 text-sm text-slate-100">

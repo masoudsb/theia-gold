@@ -5,6 +5,7 @@ import { useState } from "react";
 import "../../../../style/wallStyle.css";
 import ButtonReg from "@/components/buttonReg";
 import ButtonPre from "@/components/buttonPre";
+import Image from "next/image";
 
 export default function WallPage() {
   const [active, setActive] = useState<string | null>(null);
@@ -32,10 +33,12 @@ export default function WallPage() {
               onClick={handleWith}
               className="group relative cursor-pointer w-3/5 mx-auto"
             >
-              <img
+              <Image
                 alt="withdraw"
                 src="/pic/withdraw.png"
-                className=" rounded-lg object-cover group-hover:opacity-75 max-sm:h-80  lg:aspect-square "
+                width={160} 
+                height={160}
+                className="w-full rounded-lg object-cover group-hover:opacity-75 max-sm:h-80  lg:aspect-square "
               />
               <h3 className="mt-6 text-sm text-gray-500">
                 <a>
@@ -48,9 +51,11 @@ export default function WallPage() {
               onClick={handleCash}
               className="group relative cursor-pointer w-3/5 mx-auto"
             >
-              <img
+              <Image
                 alt="cash"
                 src="/pic/cash1.png"
+                width={160} 
+                height={160}
                 className="w-full rounded-lg object-cover group-hover:opacity-75 max-sm:h-80  lg:aspect-square"
               />
               <h3 className="mt-6 text-sm text-gray-500">

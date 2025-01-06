@@ -21,6 +21,7 @@
 .group1{
     position: absolute;
     height: 666.666px;
+    width: 715px;
     top: 40px;
     right: 0;
     gap: 0px;
@@ -87,6 +88,7 @@ opacity: 200%;
 @media (max-width: 1163px) {
     .group1{
         position: absolute;
+        width: 595.833px ;
         height: 555.555px;
         top: 40px;
         right: 0;
@@ -98,6 +100,7 @@ opacity: 200%;
 @media (max-width: 993px) {
     .group1{
         position: absolute;
+        width: 536.786px ;
         height: 500px;
         top: 40px;
         right: 0;
@@ -109,6 +112,7 @@ opacity: 200%;
 @media (max-width: 768px) {
     .group1{
         position: absolute;
+        width: 471.9px ;
         height: 440px;
         top: 40px;
         right: 0;
@@ -123,4 +127,7 @@ opacity: 200%;
     text-align: center;
     padding-top: 40px;
     width: 100%;
+}
+.divider .z-40 , .big-img2 ,.last-img2, .last-last-div{
+    position: relative !important;
 }

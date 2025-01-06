@@ -1,5 +1,5 @@
 export default function Loading() {
-    return <div className="border border-blue-300 shadow rounded-md p-4 max-w-md w-full mx-auto"><span style={{color: "goldenrod"}}>Theia Gold</span>
+    return <div className="border border-blue-300 shadow rounded-md mt-40 p-4 max-w-md w-full mx-auto"><span style={{color: "goldenrod"}}>Theia Gold</span>
     <div className="animate-pulse flex space-x-4">
       <div className="rounded-full bg-slate-200 h-10 w-10"></div>
       <div className="flex-1 space-y-6 py-1">

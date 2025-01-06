@@ -8,6 +8,7 @@ import MidTable from "@/components/midTable";
 import BigDiv from "@/components/bigDiv";
 import LastHero from "@/components/lastHero";
 import LastDiv from "@/components/lastDiv";
+import Image from "next/image";
 
 export default function Landing() {
 
@@ -16,9 +17,9 @@ export default function Landing() {
     <div id="head"  className="all ">
       <div className="land">
       
-        <img className="blur1 z-50" src="/blur.png" alt="blur"/>
-        <img className="blur2 z-0" src="/blur.png" alt="blur"/>
-        <img className="blur3 -z-10" src="/blur.png" alt="blur"/>
+        <Image width={1728} height={1728} className="blur1 z-50" src="/blur.png" alt="blur"/>
+        <Image width={1728} height={1728} className="blur2 z-0" src="/blur.png" alt="blur"/>
+        <Image width={1728} height={1728} className="blur3 -z-10" src="/blur.png" alt="blur"/>
           {/* <svg
               viewBox="0 0 1024 1024"
               aria-hidden="true"
@@ -34,33 +35,33 @@ export default function Landing() {
                   </svg> */}
         
                   
-        <img className="group1 z-0" src="/design1.png" alt="pic" />
+        <Image width={715} height={666.666} className="group1 z-0" src="/design1.png" alt="pic" />
       </div>
       <div className="hero">
         <Hero />
       </div>
-      <div className="divider z-10 relative">
-        <img src="/vector11.png" alt="vec" className="mt-32 relative z-40 w-full" />
+      <div className="divider z-10 w-full relative">
+        <Image fill src="/vector11.png" alt="vec" className="mt-32 z-40" />
         <div>
         <Divider/>
         </div>
-        <img src="/vector12.png" alt="vec" className=" relative z-40 w-full" />
+        <Image fill src="/vector12.png" alt="vec" className="z-40" />
       </div>
       <div className="mid-table z-10 relative">
         <MidTable />
       </div>
-      <div id="about" className="big-divider">
-      <img  src="/vector8.png" alt="vector8" className="w-full"/>
+      <div id="about" className="big-divider w-full">
+      <Image fill src="/vector8.png" alt="vector8" className="big-img2"/>
       <div><BigDiv/></div>
-      <img src="vector9.png" alt="vector9" className="w-full"/>  
+      <Image fill src="/vector9.png" alt="vector9" className="big-img2"/>  
       </div>
       <div className="last-hero">
         <LastHero/>
       </div>
-      <div  className="last-divider">
-      <img  src="/vector8.png" alt="vector8" className="w-full"/>
+      <div  className="last-divider w-full">
+      <Image fill src="/vector13.png" alt="vector13" className="last-img2"/>
       <div><LastDiv/></div>
-      <img  src="vector9.png" alt="vector9" className="w-full last-last-div"/>  
+      <Image fill  src="/vector14.png" alt="vector14" className="last-last-div"/>  
       </div>
     </div>
     

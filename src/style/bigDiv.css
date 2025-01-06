@@ -18,6 +18,10 @@
     object-fit: contain;
 
 }
+.pic-div .self-center{
+    position: relative !important;
+
+}
 
 
 @media(max-width:1024px){

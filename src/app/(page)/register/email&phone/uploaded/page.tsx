@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import "@/style/uploadStyle.css";
 import ButtonReg from "@/components/buttonReg";
+import Image from "next/image";
 export default function UploadFile() {
   const router = useRouter();
 
@@ -97,7 +98,7 @@ export default function UploadFile() {
               <div className=" flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 pb-16 pt-4">
                 {files[key] ? (
                   <div className="flex flex-col item-center">
-                    <img
+                    <Image
                       src={URL.createObjectURL(files[key]! as Blob)}
                       alt={label}
                       className="max-h-32 rounded-lg mb-4"

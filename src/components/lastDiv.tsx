@@ -2,7 +2,7 @@ import ButtonPre from "./buttonPre";
 import "@/style/lastDiv.css"
 export default function LastDiv() {
     return (
-        <div className="bg-last-div">
+        <div className="bg-last-div pt-12">
 
         <div className="last-div mx-auto w-3/5 text-center">
             <h2 className="text-center mb-4">Subscribtion</h2>
@@ -12,7 +12,7 @@ export default function LastDiv() {
 
                         <input type="email" placeholder="Your Email ..."/>
                         
-                <ButtonPre href="" classn="self-center btnf">Subscribe</ButtonPre>
+                <ButtonPre type="button" href="" classn="self-center btnf">Subscribe</ButtonPre>
             </form>
                     </div>
         </div>
